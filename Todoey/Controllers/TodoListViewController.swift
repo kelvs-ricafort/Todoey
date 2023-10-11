@@ -21,20 +21,15 @@ class TodoListViewController: UITableViewController {
         
         let newItem2 = Item()
         newItem2.title = "Buy Eggos"
-        newItem2.done = true
         itemArray.append(newItem2)
 
         let newItem3 = Item()
         newItem3.title = "Destroy Demogorgon"
         itemArray.append(newItem3)
         
-        
-        
-
-        
-//        if let item = defaults.array(forKey: Constants.defaultsKey) as? [String] {
-//            itemArray = item
-//        }
+        if let items = defaults.array(forKey: Constants.defaultsKey) as? [Item] {
+            itemArray = items
+        }
     }
 
 
