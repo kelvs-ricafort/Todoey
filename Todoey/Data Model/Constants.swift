@@ -8,4 +8,5 @@
 struct Constants {
     static let cellIdentifier = "ToDoItemCell"
     static let defaultsKey = "TodoListArray"
+    static let appendingAppComponent = "Items.plist"
 }
